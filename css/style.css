@@ -92,7 +92,7 @@ nav a {
   
   .contenido {
     flex: 2;
-    border: 15px  solid  yellow; /* Ocupa el doble de espacio que la imagen */
+    border: 10px  solid  yellow; /* Ocupa el doble de espacio que la imagen */
   }
 
 /*---------------main----------------*/
