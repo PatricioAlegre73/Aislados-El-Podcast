@@ -1,0 +1,441 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,500;1,700&display=swap');
+
+/*----------reset--------------------*/
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+h1 {
+    color: yellow;
+    margin: 0; 
+}
+
+
+
+
+/*----------------header-------------*/
+
+header{
+    background-color: blueviolet;
+    padding: 10px; 
+    border-bottom: 2px solid yellow; 
+    box-sizing: border-box;
+    
+}
+
+nav ul {
+    list-style: none;
+    padding: 0; 
+}
+
+nav li a {
+    display: inline-block;
+    margin-right: 10px; 
+    display: inline-block;
+    margin: 10px;
+    color: yellow
+}
+
+nav a {
+    text-decoration: none; 
+    color: yellow;
+    padding: 5px 10px; 
+    border: 1px solid yellow; 
+
+}
+
+.inicio {
+  display: flex;
+  justify-content: space-between; /* Alinea los elementos a ambos lados del encabezado */
+  align-items: center; /* Centra verticalmente los elementos */
+  background-color: blueviolet;
+  padding: 10px;
+  border-bottom: 2px solid yellow;
+  box-sizing: border-box;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px; /* Espacio entre los elementos de la lista */
+}
+
+nav li {
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+.bienvenida {
+    display: flex;
+    background-color: blueviolet;
+    padding: 10px;
+    border-bottom: 2px solid yellow;
+    box-sizing: border-box;
+  }
+  
+  .imagen {
+    flex: 1; /* Ocupa todo el espacio disponible en el contenedor */
+    margin-right: 20px; /* Espacio entre la imagen y el contenido */
+  }
+  
+  .imagen img {
+    max-width: 100%; /* Ajusta la imagen al ancho del contenedor */
+    height: auto; /* Mantiene la proporción original de la imagen */
+  }
+  
+  .contenido {
+    flex: 2; /* Ocupa el doble de espacio que la imagen */
+  }
+
+/*---------------main----------------*/
+
+main{
+  display: grid;
+  background-color: rgb(169, 96, 238);
+  
+    }
+
+
+
+.bienvenida h2{
+    color: yellow;
+    text-align:center;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.bienvenida img {
+   
+    width: 400px;
+    border: 2px solid yellow;
+}
+
+.presentacion{
+     
+    text-align: left;
+    color: yellow;
+    margin: 50px;
+    border: 8px solid yellow;
+    padding: 20px;
+    
+
+}
+
+.staff {
+    color: yellow;
+    text-align: center;
+}
+
+.fotoStaff {
+    color: yellow;
+}
+
+.contenido{
+    color: yellow;
+    text-align: center;
+}
+
+/* main nosotros*/
+.titulocomediantes {
+    margin: 15px;
+    text-align: center;
+    font-size: 50px;
+    color: yellow;
+}
+
+.descripcioncomediante {
+    color: rgb(169, 96, 238);
+}
+
+.comediantes {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+
+.comediantes div {
+    flex: 1;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: yellow;
+    border: 1px solid yellow;
+    border-radius: 5px;
+}
+
+.comediantes img {
+    max-width: 100%;
+    height: auto;
+}
+
+.comediantes p {
+    margin-top: 10px;
+}
+
+    /*main galeria*/
+
+    h2.titulogaleria {
+        font-size: 24px;
+        color:yellow ;
+        margin-bottom: 20px; 
+    }
+    
+    
+    section {
+        margin-bottom: 20px; 
+    }
+    
+    
+    section img {
+        max-width: 100%; 
+        height: auto; 
+    }
+    
+    
+    section p {
+        font-size: 16px;
+        color: yellow;
+        line-height: 1.5; 
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+      grid-gap: 20px; /* Espacio entre elementos */
+  }
+  
+  .grid-container div {
+      display: grid;
+      grid-template-columns: 1fr 1fr; /* Dos columnas dentro de cada div */
+      grid-gap: 20px; /* Espacio entre imágenes y texto */
+      align-items: center; /* Alinea verticalmente el contenido */
+  }
+  
+  .grid-container img {
+      width: 100%; /* Asegura que las imágenes ocupen todo el ancho disponible en su contenedor */
+  }
+  
+  .grid-container p {
+      text-align: left; /* Alinea el texto al lado izquierdo */
+  }
+  
+  
+  
+
+    /*main show*/
+     .tituloshow {
+        font-size: 24px; 
+        color: yellow; 
+        margin-bottom: 10px; 
+    }
+    
+    .show-container {
+      display: grid;
+      grid-template-columns: 1fr; /* Una sola columna */
+      gap: 20px; /* Espacio entre elementos */
+     
+    }
+  
+  .show-item {
+      display: grid;
+      grid-template-rows: auto auto; /* Dos filas para imagen y párrafo */
+      align-items: center; /* Alinea verticalmente el contenido */
+      color: yellow;
+    }
+  
+  .show-item img {
+      width: 25%; /* Asegura que las imágenes ocupen todo el ancho disponible */
+      border: 15px solid yellow;
+      
+    }
+
+    
+  
+    
+    /*main contacto*/
+    section .anecdota {
+      margin: 20px;
+      padding: 10px;
+  }
+    
+  .anecdota {
+    display: flex;
+    justify-content: flex-end; /* Coloca el contenido al final del contenedor */
+    align-items: stretch; /* Estira los elementos verticalmente */
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    padding: 20px; /* Ajusta el espaciado interno según sea necesario */
+}
+
+.anecdota form {
+    display: flex;
+    flex-direction: column;
+    width: 50%; /* Define el ancho del formulario */
+    padding: 20px; /* Ajusta el espaciado interno del formulario */
+}
+
+.formulario {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  grid-gap: 5px; /* Espacio entre las etiquetas y los campos de entrada */
+}
+
+.aisladoscontacto {
+  width: 50%;
+  margin: 20px;
+  border: 5px solid yellow;
+}
+
+/*--------------footer---------------*/
+footer{
+    background-color: blueviolet;
+    border: 2px solid yellow;
+}
+
+.redes {
+    color: yellow;
+}
+
+
+footer {
+    background-color:blueviolet;  
+    padding: 20px; 
+    text-align: center; 
+}
+
+
+h2 .redes {
+    font-size: 18px; 
+    margin-bottom: 10px; 
+}
+
+
+footer a {
+    display: inline-block;
+    margin: 0 10px; 
+}
+
+footer img {
+    width: 30px; 
+    height: 30px; 
+}
+
+.redes-footer {
+  background-color: blueviolet;
+  padding: 10px;
+  text-align: center; /* Alinea el contenido al centro */
+}
+
+.redes-container {
+  display: flex;
+  justify-content: center; /* Centra los elementos horizontalmente */
+  align-items: center; /* Centra los elementos verticalmente */
+}
+
+.redes-container a {
+  text-decoration: none;
+  margin: 0 10px; /* Espacio entre los elementos */
+
+}
+
+.staff-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Crea dos columnas con el mismo ancho */
+  grid-gap: 20px; /* Espacio entre las celdas de la cuadrícula */
+  text-align: center;
+  margin: 20px;
+}
+
+.staff-member {
+  border: 10px solid #ddd; /* Bordes alrededor de cada miembro */
+  padding: 20px;
+  border-color: yellow;
+}
+
+.staff-member img{
+  border: 2px solid yellow;
+
+}
+
+.fotoStaff {
+  margin-top: 10px; /* Espacio entre la imagen y el nombre */
+  border: 7px solid yellow;
+}
+
+
+
+.contenido-flexbox {
+  text-align: center; /* Alinea el contenido al centro */
+}
+
+.iframes-container {
+  display: flex;
+  justify-content: center; /* Centra los iframes horizontalmente */
+  align-items: center; /* Centra los iframes verticalmente */
+  flex-wrap: nowrap; /* Evita que los iframes se envuelvan a la siguiente línea */
+  overflow-x: auto; /* Agrega una barra de desplazamiento horizontal si es necesario */
+}
+
+.iframes-container iframe {
+  margin: 0 10px; /* Espacio entre los iframes */
+}
+
+
+.redes-footer {
+  background-color: blueviolet;
+  padding: 10px;
+  text-align: center; /* Alinea el contenido al centro */
+}
+
+.redes-container {
+  display: flex;
+  justify-content: center; /* Centra los elementos horizontalmente */
+  align-items: center; /* Centra los elementos verticalmente */
+}
+
+.redes-container a {
+  text-decoration: none;
+  margin: 0 20px; /* Espacio entre los elementos */
+}
+
+
+/*--------------mediaquerie-----------------*/
+
+
+
+@media screen and (max-width: 950px) {
+  .inicio {
+    flex-direction: column; /* Cambia la dirección de los elementos a columna */
+  }
+  
+  nav ul {
+    flex-direction: column; /* Cambia la dirección de los elementos del menú a columna */
+    align-items: center; /* Centra verticalmente los elementos del menú */
+  }
+
+  .bienvenida {
+    flex-direction: column; /* Cambia la dirección de los elementos a columna */
+  }
+
+  .imagen {
+    margin-right: 0; /* Elimina el margen entre la imagen y el contenido */
+  }
+}
+
+
+
+  
+
+  
+  
+  
+  
+  
+  
