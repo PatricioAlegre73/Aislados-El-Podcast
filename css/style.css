@@ -1,65 +1,64 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,500&display=swap');
 
 /*----------reset--------------------*/
 * {
-    margin: 0;
-    padding:0;
-    box-sizing: border-box;
-    font-family: 'Josefin Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Josefin Sans', sans-serif;
+  ;
 }
-h1 {
-    color: yellow;
-    margin: 0; 
-}
-
-
 
 
 /*----------------header-------------*/
 
-header{
-    background-color: blueviolet;
-    padding: 10px; 
-    border-bottom: 2px solid yellow; 
-    box-sizing: border-box;
-    
-}
-
-nav ul {
-    list-style: none;
-    padding: 0; 
-}
-
-nav li a {
-    display: inline-block;
-    margin-right: 10px; 
-    display: inline-block;
-    margin: 10px;
-    color: yellow
-}
-
-nav a {
-    text-decoration: none; 
-    color: yellow;
-    padding: 5px 10px; 
-    border: 1px solid yellow; 
-
-}
-
-.inicio {
-  display: flex;
-  justify-content: space-between; /* Alinea los elementos a ambos lados del encabezado */
-  align-items: center; /* Centra verticalmente los elementos */
+header {
   background-color: blueviolet;
   padding: 10px;
   border-bottom: 2px solid yellow;
   box-sizing: border-box;
+
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav li a {
+  display: inline-block;
+  margin-right: 10px;
+  display: inline-block;
+  margin: 10px;
+  color: blueviolet;
+  background-color: yellow;
+}
+
+nav a {
+  text-decoration: none;
+  color: yellow;
+  padding: 5px 10px;
+  border: 1px solid yellow;
+
+}
+
+.inicio {
+
+
+  display: flex;
+  justify-content: space-between;
+  /* Alinea los elementos a ambos lados del encabezado */
+  align-items: center;
+  /* Centra verticalmente los elementos */
+  background-color: blueviolet;
+  padding: 10px;
 }
 
 nav ul {
   list-style: none;
   display: flex;
-  gap: 20px; /* Espacio entre los elementos de la lista */
+  gap: 20px;
+  /* Espacio entre los elementos de la lista */
 }
 
 nav li {
@@ -72,220 +71,480 @@ nav a {
   color: white;
 }
 
+/* CSS */
+nav ul li a {
+  transition: color 0.3s ease-in-out;
+  /* Transición suave en el cambio de color */
+}
+
+nav ul li a:hover {
+  color: rgb(187, 137, 235);
+  /* Cambia el color al pasar el cursor */
+}
+
+
 .bienvenida {
-    display: flex;
-    background-color: blueviolet;
-    padding: 10px;
-    border-bottom: 2px solid yellow;
-    box-sizing: border-box;
-  }
-  
-  .imagen {
-    flex: 1; /* Ocupa todo el espacio disponible en el contenedor */
-    margin-right: 20px; /* Espacio entre la imagen y el contenido */
-  }
-  
-  .imagen img {
-    max-width: 100%; /* Ajusta la imagen al ancho del contenedor */
-    height: auto; /* Mantiene la proporción original de la imagen */
-  }
-  
-  .contenido {
-    flex: 2;
-    border: 10px  solid  yellow; /* Ocupa el doble de espacio que la imagen */
-  }
+  display: flex;
+  background-color: rgb(187, 137, 235);
+  padding: 10px;
+
+}
+
+
+
+.imagen {
+  flex: 1;
+  /* Ocupa todo el espacio disponible en el contenedor */
+  margin-right: 20px;
+  /* Espacio entre la imagen y el contenido */
+}
+
+.imagen img {
+  max-width: 100%;
+  /* Ajusta la imagen al ancho del contenedor */
+  height: auto;
+  /* Mantiene la proporción original de la imagen */
+}
+
+.contenido {
+  flex: 2;
+  border: 10px solid yellow;
+  /* Ocupa el doble de espacio que la imagen */
+}
+
+.imagentitulo {
+  text-align: center;
+}
+
+.imagentitulo img {
+  max-width: 80px;
+  border: 2px solid yellow;
+}
+
+.logonav {
+  text-align: center;
+  /* Centra horizontalmente la imagen */
+}
+
+.logonav img {
+  max-width: 80px;
+  border: 2px solid yellow;
+  transition: transform 0.3s ease-in-out;
+  /* Transición suave de transformación */
+
+}
+
+.logonav img:hover {
+  transform: scale(1.2);
+  /* Aumenta el tamaño al pasar el cursor sobre la imagen */
+}
 
 /*---------------main----------------*/
 
-main{
+main {
   display: grid;
-  background-color: rgb(169, 96, 238);
-  
-    }
-
-
-
-.bienvenida h2{
-    color: yellow;
-    text-align:center;
-    flex-direction: column;
-    margin: 10px;
-}
-
-.bienvenida img {
-   
-    width: 400px;
-    border: 2px solid yellow;
-}
-
-.presentacion{
-     
-    text-align: left;
-    color: yellow;
-    margin: 50px;
-    border: 8px solid yellow;
-    padding: 20px;
-    
+  background-color: rgb(187, 137, 235);
 
 }
 
-.staff {
-    color: yellow;
-    text-align: center;
+
+.titulobienvenida {
+  text-align: center;
+  color: rgb(187, 137, 235);
+  /* Color del texto */
+  margin: 50px;
+  margin-top: 30px;
+  letter-spacing: 2px;
+  font-size: 3em;
+  /* Tamaño de la fuente más grande */
+
+  padding: 10px;
+  /* Espaciado interno para resaltar */
+  background-color: yellow;
+  /* Color de fondo */
+  border-radius: 10px;
+  /* Bordes redondeados */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  /* Sombra suave */
+}
+
+
+
+
+.staff-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* Crea dos columnas con el mismo ancho */
+  grid-gap: 20px;
+  /* Espacio entre las celdas de la cuadrícula */
+  text-align: center;
+  margin: 20px;
+}
+
+.staff-member {
+  background-color: blueviolet;
+  border: 5px solid yellow;
+  /* Bordes alrededor de cada miembro */
+  padding: 20px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.staff-member img {
+  border: 2px solid yellow;
+
+}
+
+.staff-member:hover {
+  transform: scale(1.1);
+  /* Aumenta el tamaño al pasar el cursor */
+  opacity: 0.8;
+  /* Reduce la opacidad al pasar el cursor */
 }
 
 .fotoStaff {
-    color: yellow;
+  margin-top: 10px;
+  /* Espacio entre la imagen y el nombre */
+  border: 5px solid yellow;
 }
 
-.contenido{
-    color: yellow;
-    text-align: center;
+
+
+.contenido-flexbox {
+  text-align: center;
+  /* Alinea el contenido al centro */
+}
+
+.iframes-container {
+  display: flex;
+  justify-content: center;
+  /* Centra los iframes horizontalmente */
+  align-items: center;
+  /* Centra los iframes verticalmente */
+  flex-wrap: nowrap;
+  /* Evita que los iframes se envuelvan a la siguiente línea */
+  overflow-x: auto;
+  /* Agrega una barra de desplazamiento horizontal si es necesario */
+}
+
+.iframes-container iframe {
+  margin: 0 10px;
+  /* Espacio entre los iframes */
+}
+
+
+.redes-footer {
+  background-color: blueviolet;
+  padding: 10px;
+  text-align: center;
+  /* Alinea el contenido al centro */
+}
+
+.redes-container {
+  display: flex;
+  justify-content: center;
+  /* Centra los elementos horizontalmente */
+  align-items: center;
+  /* Centra los elementos verticalmente */
+}
+
+.redes-container a {
+  text-decoration: none;
+  margin: 0 20px;
+  /* Espacio entre los elementos */
+}
+
+
+
+.bienvenida h2 {
+  color: yellow;
+  text-align: center;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.bienvenida img {
+
+  width: 400px;
+  border: 2px solid yellow;
+}
+
+.presentacion {
+
+  text-align: left;
+  color: yellow;
+  margin: 50px;
+  border: 8px solid yellow;
+  padding: 20px;
+  background-color: blueviolet;
+}
+
+/* CSS */
+.presentacion {
+  opacity: 0;
+  /* Comienza con opacidad 0 para la animación */
+  transform: translateY(20px);
+  /* Inicia desplazado hacia abajo */
+  transition: opacity 1s ease, transform 1s ease;
+  /* Transiciones suaves */
+}
+
+/* Animación al cargar */
+.presentacion {
+  opacity: 1;
+  /* Cambia la opacidad a 1 */
+  transform: translateY(0);
+  /* Regresa a la posición original */
+}
+
+.staff {
+  color: yellow;
+  text-align: center;
+
+  color: rgb(187, 137, 235);
+  /* Color del texto */
+  margin: 50px;
+  margin-top: 30px;
+  letter-spacing: 2px;
+  font-size: 3em;
+  /* Tamaño de la fuente más grande */
+
+  padding: 5px;
+  /* Espaciado interno para resaltar */
+  background-color: yellow;
+  /* Color de fondo */
+  border-radius: 10px;
+  /* Bordes redondeados */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  /* Sombra suave */
+}
+
+.fotoStaff {
+  color: yellow;
+}
+
+.contenido {
+  color: yellow;
+  text-align: center;
+  
+   color: rgb(187, 137, 235); /* Color del texto */
+  margin: 50px;
+  margin-top: 30px;
+  letter-spacing: 2px;
+  font-size: 3em; /* Tamaño de la fuente más grande */
+ 
+  padding: 10px; /* Espaciado interno para resaltar */
+  background-color: yellow; /* Color de fondo */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra suave */
 }
 
 /* main nosotros*/
 .titulocomediantes {
-    margin: 15px;
-    text-align: center;
-    font-size: 50px;
-    color: yellow;
+  margin: 15px;
+  text-align: center;
+  font-size: 50px;
+  color: yellow;
+  text-align: center;
+  color: rgb(187, 137, 235);
+  /* Color del texto */
+  margin: 50px;
+  margin-top: 30px;
+  letter-spacing: 2px;
+  
+
+  padding: 10px;
+  /* Espaciado interno para resaltar */
+  background-color: yellow;
+  /* Color de fondo */
+  border-radius: 10px;
+  /* Bordes redondeados */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  /* Sombra suave */
 }
 
 .descripcioncomediante {
-    color: rgb(169, 96, 238);
+  color: rgb(169, 96, 238);
 }
 
 .comediantes {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
 }
 
 .comediantes div {
-    flex: 1;
-    text-align: center;
-    margin: 20px;
-    padding: 20px;
-    background-color: yellow;
-    border: 1px solid yellow;
-    border-radius: 5px;
+  flex: 1;
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  background-color: yellow;
+  border: 1px solid yellow;
+  border-radius: 5px;
 }
 
 .comediantes img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 .comediantes p {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
-    /*main galeria*/
+.redcomediantes a img{
+  width: 30px;
+  height: 30px;
+}
 
-    h2.titulogaleria {
-        font-size: 24px;
-        color:yellow ;
-        margin-bottom: 20px; 
-    }
-    
-    
-    section {
-        margin-bottom: 20px; 
-    }
-    
-    
-    section img {
-        max-width: 100%; 
-        height: auto; 
-    }
-    
-    
-    section p {
-        font-size: 16px;
-        color: yellow;
-        line-height: 1.5; 
-    }
+/*main galeria*/
+.image-description {
+  opacity: 0;
+  transition: opacity 0.3s ease; /* Transición suave */
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 5px;
+  width: 80%;
+  text-align: center;
+}
 
-    .grid-container {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr); /* Dos columnas */
-      grid-gap: 20px; /* Espacio entre elementos */
-  }
-  
-  .grid-container div {
-      display: grid;
-      grid-template-columns: 1fr 1fr; /* Dos columnas dentro de cada div */
-      grid-gap: 20px; /* Espacio entre imágenes y texto */
-      align-items: center; /* Alinea verticalmente el contenido */
-  }
-  
-  .grid-container img {
-      width: 100%; /* Asegura que las imágenes ocupen todo el ancho disponible en su contenedor */
-  }
-  
-  .grid-container p {
-      text-align: left; /* Alinea el texto al lado izquierdo */
-  }
-  
-  
-  
+.image-container {
+  position: relative;
+  display: inline-block;
+}
 
-    /*main show*/
-     .tituloshow {
-        font-size: 24px; 
-        color: yellow; 
-        margin-bottom: 10px; 
-    }
-    
-    .show-container {
-      display: grid;
-      grid-template-columns: 1fr; /* Una sola columna */
-      gap: 20px; /* Espacio entre elementos */
-     
-    }
-  
-  .show-item {
-      display: grid;
-      grid-template-rows: auto auto; /* Dos filas para imagen y párrafo */
-      align-items: center; /* Alinea verticalmente el contenido */
-      color: yellow;
-    }
-  
-  .show-item img {
-      width: 25%; /* Asegura que las imágenes ocupen todo el ancho disponible */
-      border: 15px solid yellow;
-      
-    }
+.image-container:hover .image-description {
+  opacity: 1;
+}
 
-    
-  
-    
-    /*main contacto*/
-    section .anecdota {
-      margin: 20px;
-      padding: 10px;
-  }
-    
-  .anecdota {
-    display: flex;
-    justify-content: flex-end; /* Coloca el contenido al final del contenedor */
-    align-items: stretch; /* Estira los elementos verticalmente */
-    height: 100vh; /* Ocupa toda la altura de la ventana */
-    padding: 20px; /* Ajusta el espaciado interno según sea necesario */
+
+h2.titulogaleria {
+  font-size: 24px;
+  color: yellow;
+  margin-bottom: 20px;
+}
+
+
+section {
+  margin-bottom: 20px;
+}
+
+
+section img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+section p {
+  font-size: 16px;
+  color: yellow;
+  line-height: 1.5;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* Dos columnas */
+  grid-gap: 20px;
+  /* Espacio entre elementos */
+}
+
+.grid-container div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* Dos columnas dentro de cada div */
+  grid-gap: 20px;
+  /* Espacio entre imágenes y texto */
+  align-items: center;
+  /* Alinea verticalmente el contenido */
+}
+
+.grid-container img {
+  width: 100%;
+  /* Asegura que las imágenes ocupen todo el ancho disponible en su contenedor */
+}
+
+.grid-container p {
+  text-align: left;
+  /* Alinea el texto al lado izquierdo */
+}
+
+
+
+
+/*main show*/
+.tituloshow {
+  font-size: 24px;
+  color: yellow;
+  margin-bottom: 10px;
+}
+
+.show-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  /* Una sola columna */
+  gap: 20px;
+  /* Espacio entre elementos */
+  justify-items: center;
+  align-items: center;
+}
+
+.show-item {
+  display: grid;
+  grid-template-rows: auto auto;
+  /* Dos filas para imagen y párrafo */
+  align-items: center;
+  /* Alinea verticalmente el contenido */
+  color: yellow;
+}
+
+.show-item img {
+  width: 25%;
+  /* Asegura que las imágenes ocupen todo el ancho disponible */
+  border: 15px solid yellow;
+
+}
+
+
+
+
+/*main contacto*/
+section .anecdota {
+  margin: 20px;
+  padding: 10px;
+}
+
+.anecdota {
+  display: flex;
+  justify-content: flex-end;
+  /* Coloca el contenido al final del contenedor */
+  align-items: stretch;
+  /* Estira los elementos verticalmente */
+  height: 100vh;
+  /* Ocupa toda la altura de la ventana */
+  padding: 20px;
+  /* Ajusta el espaciado interno según sea necesario */
 }
 
 .anecdota form {
-    display: flex;
-    flex-direction: column;
-    width: 50%; /* Define el ancho del formulario */
-    padding: 20px; /* Ajusta el espaciado interno del formulario */
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  /* Define el ancho del formulario */
+  padding: 20px;
+  /* Ajusta el espaciado interno del formulario */
 }
 
 .formulario {
   display: grid;
   grid-template-columns: max-content 1fr;
-  grid-gap: 5px; /* Espacio entre las etiquetas y los campos de entrada */
+  grid-gap: 5px;
+  /* Espacio entre las etiquetas y los campos de entrada */
 }
 
 .aisladoscontacto {
@@ -295,116 +554,62 @@ main{
 }
 
 /*--------------footer---------------*/
-footer{
-    background-color: blueviolet;
-    border: 2px solid yellow;
+footer {
+  background-color: blueviolet;
+  border: 2px solid yellow;
 }
 
 .redes {
-    color: yellow;
+  color: yellow;
 }
 
 
 footer {
-    background-color:blueviolet;  
-    padding: 20px; 
-    text-align: center; 
+  background-color: blueviolet;
+  padding: 20px;
+  text-align: center;
 }
 
 
 h2 .redes {
-    font-size: 18px; 
-    margin-bottom: 10px; 
+  font-size: 18px;
+  margin-bottom: 10px;
 }
 
 
 footer a {
-    display: inline-block;
-    margin: 0 10px; 
+  display: inline-block;
+  margin: 0 10px;
 }
 
 footer img {
-    width: 30px; 
-    height: 30px; 
+  width: 30px;
+  height: 30px;
 }
 
 .redes-footer {
   background-color: blueviolet;
   padding: 10px;
-  text-align: center; /* Alinea el contenido al centro */
-}
-
-.redes-container {
-  display: flex;
-  justify-content: center; /* Centra los elementos horizontalmente */
-  align-items: center; /* Centra los elementos verticalmente */
-}
-
-.redes-container a {
-  text-decoration: none;
-  margin: 0 10px; /* Espacio entre los elementos */
-
-}
-
-.staff-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Crea dos columnas con el mismo ancho */
-  grid-gap: 20px; /* Espacio entre las celdas de la cuadrícula */
   text-align: center;
-  margin: 20px;
-}
-
-.staff-member {
-  border: 10px solid #ddd; /* Bordes alrededor de cada miembro */
-  padding: 20px;
-  border-color: yellow;
-}
-
-.staff-member img{
-  border: 2px solid yellow;
-
-}
-
-.fotoStaff {
-  margin-top: 10px; /* Espacio entre la imagen y el nombre */
-  border: 7px solid yellow;
-}
-
-
-
-.contenido-flexbox {
-  text-align: center; /* Alinea el contenido al centro */
-}
-
-.iframes-container {
-  display: flex;
-  justify-content: center; /* Centra los iframes horizontalmente */
-  align-items: center; /* Centra los iframes verticalmente */
-  flex-wrap: nowrap; /* Evita que los iframes se envuelvan a la siguiente línea */
-  overflow-x: auto; /* Agrega una barra de desplazamiento horizontal si es necesario */
-}
-
-.iframes-container iframe {
-  margin: 0 10px; /* Espacio entre los iframes */
-}
-
-
-.redes-footer {
-  background-color: blueviolet;
-  padding: 10px;
-  text-align: center; /* Alinea el contenido al centro */
+  /* Alinea el contenido al centro */
 }
 
 .redes-container {
   display: flex;
-  justify-content: center; /* Centra los elementos horizontalmente */
-  align-items: center; /* Centra los elementos verticalmente */
+  justify-content: center;
+  /* Centra los elementos horizontalmente */
+  align-items: center;
+  /* Centra los elementos verticalmente */
 }
 
 .redes-container a {
   text-decoration: none;
-  margin: 0 20px; /* Espacio entre los elementos */
+  margin: 0 10px;
+  /* Espacio entre los elementos */
+
 }
+
+
 
 
 /*--------------mediaquerie-----------------*/
@@ -413,30 +618,24 @@ footer img {
 
 @media screen and (max-width: 950px) {
   .inicio {
-    flex-direction: column; /* Cambia la dirección de los elementos a columna */
+    flex-direction: column;
+    /* Cambia la dirección de los elementos a columna */
   }
-  
+
   nav ul {
-    flex-direction: column; /* Cambia la dirección de los elementos del menú a columna */
-    align-items: center; /* Centra verticalmente los elementos del menú */
+    flex-direction: column;
+    /* Cambia la dirección de los elementos del menú a columna */
+    align-items: center;
+    /* Centra verticalmente los elementos del menú */
   }
 
   .bienvenida {
-    flex-direction: column; /* Cambia la dirección de los elementos a columna */
+    flex-direction: column;
+    /* Cambia la dirección de los elementos a columna */
   }
 
   .imagen {
-    margin-right: 0; /* Elimina el margen entre la imagen y el contenido */
+    margin-right: 0;
+    /* Elimina el margen entre la imagen y el contenido */
   }
 }
-
-
-
-  
-
-  
-  
-  
-  
-  
-  
