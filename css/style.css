@@ -278,7 +278,7 @@ main {
   background-color: blueviolet;
 }
 
-/* CSS */
+
 .presentacion {
   opacity: 0;
   /* Comienza con opacidad 0 para la animación */
@@ -325,17 +325,23 @@ main {
 .contenido {
   color: yellow;
   text-align: center;
-  
-   color: rgb(187, 137, 235); /* Color del texto */
+
+  color: rgb(187, 137, 235);
+  /* Color del texto */
   margin: 50px;
   margin-top: 30px;
   letter-spacing: 2px;
-  font-size: 3em; /* Tamaño de la fuente más grande */
- 
-  padding: 10px; /* Espaciado interno para resaltar */
-  background-color: yellow; /* Color de fondo */
-  border-radius: 10px; /* Bordes redondeados */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra suave */
+  font-size: 3em;
+  /* Tamaño de la fuente más grande */
+
+  padding: 10px;
+  /* Espaciado interno para resaltar */
+  background-color: yellow;
+  /* Color de fondo */
+  border-radius: 10px;
+  /* Bordes redondeados */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  /* Sombra suave */
 }
 
 /* main nosotros*/
@@ -350,7 +356,7 @@ main {
   margin: 50px;
   margin-top: 30px;
   letter-spacing: 2px;
-  
+
 
   padding: 10px;
   /* Espaciado interno para resaltar */
@@ -392,24 +398,62 @@ main {
   margin-top: 10px;
 }
 
-.redcomediantes a img{
+.redcomediantes a img {
   width: 30px;
   height: 30px;
 }
 
 /*main galeria*/
-.image-description {
-  opacity: 0;
-  transition: opacity 0.3s ease; /* Transición suave */
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 10px;
-  border-radius: 5px;
-  width: 80%;
+.titulogaleria {
+  margin: 15px;
   text-align: center;
+  font-size: 50px;
+  color: yellow;
+  text-align: center;
+  color: rgb(187, 137, 235);
+  /* Color del texto */
+  margin: 50px;
+  margin-top: 30px;
+  letter-spacing: 2px;
+  padding: 10px;
+  /* Espaciado interno para resaltar */
+  background-color: yellow;
+  /* Color de fondo */
+  border-radius: 10px;
+  /* Bordes redondeados */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  /* Sombra suave */
+}
+
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  /* Define el tamaño de las columnas */
+  gap: 20px;
+  /* Espacio entre las imágenes */
+  max-width: 1200px;
+  /* Ancho máximo de la galería */
+  margin: 20px auto;
+  /* Centra la galería */
+}
+
+.image-container {
+  border: 5px solid yellow;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Ajusta la imagen para cubrir todo el contenedor */
+  display: block;
 }
 
 .image-container {
@@ -417,103 +461,104 @@ main {
   display: inline-block;
 }
 
-.image-container:hover .image-description {
-  opacity: 1;
+.descripcionimagen {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px;
+  width: 80%;
+  text-align: center;
 }
 
-
-h2.titulogaleria {
-  font-size: 24px;
-  color: yellow;
-  margin-bottom: 20px;
+.image-container:hover .descripcionimagen {
+  display: block;
 }
 
-
-section {
-  margin-bottom: 20px;
-}
-
-
-section img {
-  max-width: 100%;
-  height: auto;
-}
-
-
-section p {
-  font-size: 16px;
-  color: yellow;
-  line-height: 1.5;
-}
-
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  /* Dos columnas */
-  grid-gap: 20px;
-  /* Espacio entre elementos */
-}
-
-.grid-container div {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  /* Dos columnas dentro de cada div */
-  grid-gap: 20px;
-  /* Espacio entre imágenes y texto */
-  align-items: center;
-  /* Alinea verticalmente el contenido */
-}
-
-.grid-container img {
-  width: 100%;
-  /* Asegura que las imágenes ocupen todo el ancho disponible en su contenedor */
-}
-
-.grid-container p {
-  text-align: left;
-  /* Alinea el texto al lado izquierdo */
-}
 
 
 
 
 /*main show*/
 .tituloshow {
-  font-size: 24px;
+  margin: 15px;
+  text-align: center;
+  font-size: 50px;
   color: yellow;
-  margin-bottom: 10px;
+  text-align: center;
+  color: rgb(187, 137, 235);
+  /* Color del texto */
+  margin: 50px;
+  margin-top: 30px;
+  letter-spacing: 2px;
+  padding: 10px;
+  /* Espaciado interno para resaltar */
+  background-color: yellow;
+  /* Color de fondo */
+  border-radius: 10px;
+  /* Bordes redondeados */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  /* Sombra suave */
 }
 
 .show-container {
   display: grid;
-  grid-template-columns: 1fr;
-  /* Una sola columna */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
-  /* Espacio entre elementos */
-  justify-items: center;
+  justify-content: center;
   align-items: center;
+  padding: 20px;
+  text-align: center;
 }
 
 .show-item {
-  display: grid;
-  grid-template-rows: auto auto;
-  /* Dos filas para imagen y párrafo */
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  /* Alinea verticalmente el contenido */
-  color: yellow;
+  justify-content: center;
+  border: 15px solid yellow;
+  padding: 20px;
 }
 
 .show-item img {
-  width: 25%;
-  /* Asegura que las imágenes ocupen todo el ancho disponible */
-  border: 15px solid yellow;
-
+  width: 100%;
+  max-width: 300px; /* Tamaño máximo para la imagen */
+  height: auto;
+  border: 15px solid yellow 
 }
+
+
+
 
 
 
 
 /*main contacto*/
+.tituloanecdotas{
+  margin: 15px;
+  text-align: center;
+  font-size: 50px;
+  color: yellow;
+  text-align: center;
+  color: rgb(187, 137, 235);
+  /* Color del texto */
+  margin: 50px;
+  margin-top: 30px;
+  letter-spacing: 2px;
+  padding: 10px;
+  /* Espaciado interno para resaltar */
+  background-color: yellow;
+  /* Color de fondo */
+  border-radius: 10px;
+  /* Bordes redondeados */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  /* Sombra suave */
+
+
+}
 section .anecdota {
   margin: 20px;
   padding: 10px;
@@ -637,5 +682,13 @@ footer img {
   .imagen {
     margin-right: 0;
     /* Elimina el margen entre la imagen y el contenido */
+  }
+  .titulobienvenida {
+    font-size: 2em;
+    margin: 20px;
+  }
+
+  .presentacion {
+    margin: 20px;
   }
 }
