@@ -1,0 +1,41 @@
+footer {
+    background-color: $color-primario;
+    border: 2px solid $color-secundario;
+    padding: 20px;
+    text-align: center;
+  
+    h2 {
+      .redes {
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+    }
+  
+    a {
+      display: inline-block;
+      margin: 0 10px;
+    }
+  
+    img {
+      width: 30px;
+      height: 30px;
+    }
+  
+    .redes-footer {
+      background-color: $color-primario;
+      padding: 10px;
+      text-align: center;
+  
+      .redes-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+  
+        a {
+          text-decoration: none;
+          margin: 0 10px;
+        }
+      }
+    }
+  }
+  
