@@ -21,6 +21,34 @@
       /* Elimina el margen entre la imagen y el contenido */
     }
   }
+
+  /* Estilos base */
+/* ... (otros estilos) ... */
+
+/* Correcciones con media queries */
+
+/* Cambios para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+  main {
+    /* Cambios en el fondo u otros ajustes */
+    background-color: $color-terciario;
+  }
+
+  .bienvenida img {
+    /* Ajustes para la imagen en pantallas pequeñas */
+    width: auto;
+    max-width: 100%; /* Opcional: limitar el ancho al contenedor */
+  }
+
+  .staff-grid {
+    /* Modificar o quitar las reglas de grid para cambiar a una sola columna */
+    display: flex; /* Ejemplo: cambia a un layout de fila única */
+    flex-direction: column; /* Opcional: si deseas un diseño de una sola columna */
+  }
+}
+
+/* Otras media queries según sea necesario para diferentes tamaños de pantalla */
+
   
   /* Estilos base */
   
