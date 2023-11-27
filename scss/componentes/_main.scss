@@ -18,7 +18,7 @@ main {
   
   .staff-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1fr);
     grid-gap: 20px;
     text-align: center;
     margin: 20px;
@@ -148,7 +148,7 @@ main {
   text-align: center;
   font-size: 50px;
   color: $color-terciario;
-  margin: 50px;
+  
   margin-top: 30px;
   letter-spacing: 2px;
   padding: 10px;
@@ -162,7 +162,7 @@ main {
 }
 
 .comediantes {
-  display: flex;
+  
   justify-content: space-between;
   flex-wrap: wrap;
 
@@ -205,14 +205,14 @@ main {
     margin: 15px;
     text-align: center;
     font-size: 50px;
-    color: yellow;
+    color: $color-secundario;
     text-align: center;
-    color: rgb(187, 137, 235); /* Color del texto */
+    color: $color-terciario; /* Color del texto */
     margin: 50px;
     margin-top: 30px;
     letter-spacing: 2px;
     padding: 10px; /* Espaciado interno para resaltar */
-    background-color: yellow; /* Color de fondo */
+    background-color: $color-secundario; /* Color de fondo */
     border-radius: 10px; /* Bordes redondeados */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra suave */
   }
@@ -225,7 +225,7 @@ main {
     align-items: center;
     padding: 20px;
     text-align: center;
-    color: yellow;
+    color: $color-secundario;
   }
   
   .show-item {
@@ -233,7 +233,7 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 15px solid yellow;
+    border: 15px solid $color-secundario;
     padding: 20px;
   }
   
@@ -241,7 +241,7 @@ main {
     width: 100%;
     max-width: 300px; /* Tamaño máximo para la imagen */
     height: auto;
-    border: 15px solid yellow;
+    border: 15px solid $color-secundario;
   }
   
   .show-item h3 {
@@ -254,16 +254,16 @@ main {
     margin: 15px;
     text-align: center;
     font-size: 50px;
-    color: yellow;
+    color: $color-secundario;
     text-align: center;
-    color: rgb(187, 137, 235);
+    color: $color-terciario;
     /* Color del texto */
     margin: 50px;
     margin-top: 30px;
     letter-spacing: 2px;
     padding: 10px;
     /* Espaciado interno para resaltar */
-    background-color: yellow;
+    background-color: $color-secundario;
     /* Color de fondo */
     border-radius: 10px;
     /* Bordes redondeados */
@@ -287,7 +287,7 @@ main {
   }
   
   .image-container {
-    border: 5px solid yellow;
+    border: 5px solid $color-secundario;
     border-radius: 8px;
     overflow: hidden;
     position: relative;
@@ -307,8 +307,8 @@ main {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    background-color: blueviolet;
-    color: yellow;
+    background-color: $color-primario;
+    color: $color-secundario;
     padding: 10px;
     width: 80%;
     text-align: center;
@@ -341,10 +341,11 @@ main {
   align-items: center;
   margin-top: 20px;
   padding: 100px;
+  flex-direction: column;
 
   img {
     max-width: 70%;
-    height: 100%;
+    
     border: 5px solid $color-secundario;
   }
 }

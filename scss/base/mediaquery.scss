@@ -122,7 +122,24 @@
     .descripcionimagen {
       font-size: 14px;
       padding: 8px;
+      position: absolute;
     }
   }
   
+  @media (max-width: 950px) {
+    .comediantes div {
+      flex: 1; /* Ajuste el comportamiento del flexbox para pantallas más pequeñas */
+      width: calc(50% - 40px); /* Cambiar el ancho de las columnas para pantallas más pequeñas */
+      // Otros ajustes según sea necesario para pantallas más pequeñas
+    }
+  }
   
+    .titulocomediantes {
+      font-size: 40px; /* Reducir el tamaño del título para pantallas más pequeñas */
+      margin: 20px; /* Ajustar los márgenes */
+    }
+    
+
+    
+      
+    

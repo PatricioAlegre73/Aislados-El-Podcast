@@ -88,7 +88,7 @@ main {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); }
   main .staff-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1fr);
     grid-gap: 20px;
     text-align: center;
     margin: 20px; }
@@ -178,7 +178,6 @@ main {
   text-align: center;
   font-size: 50px;
   color: #bb89eb;
-  margin: 50px;
   margin-top: 30px;
   letter-spacing: 2px;
   padding: 10px;
@@ -190,7 +189,6 @@ main {
   color: #bb89eb; }
 
 .comediantes {
-  display: flex;
   justify-content: space-between;
   flex-wrap: wrap; }
   .comediantes div {
@@ -346,10 +344,10 @@ main {
   gap: 20px;
   align-items: center;
   margin-top: 20px;
-  padding: 100px; }
+  padding: 100px;
+  flex-direction: column; }
   .anecdota img {
     max-width: 70%;
-    height: 100%;
     border: 5px solid yellow; }
 
 .form-control {
@@ -491,4 +489,18 @@ footer {
     /* Centrar la imagen */ }
   .descripcionimagen {
     font-size: 14px;
-    padding: 8px; } }
+    padding: 8px;
+    position: absolute; } }
+
+@media (max-width: 950px) {
+  .comediantes div {
+    flex: 1;
+    /* Ajuste el comportamiento del flexbox para pantallas más pequeñas */
+    width: calc(50% - 40px);
+    /* Cambiar el ancho de las columnas para pantallas más pequeñas */ } }
+
+.titulocomediantes {
+  font-size: 40px;
+  /* Reducir el tamaño del título para pantallas más pequeñas */
+  margin: 20px;
+  /* Ajustar los márgenes */ }
